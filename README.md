@@ -23,6 +23,7 @@ This project demonstrates the design of a school management system using dimensi
 1. **Clone the Repository**:
    ```sh
    git clone https://github.com/Mamiololo01/data_modelling_with_postgres.git
+
    cd data_modelling_with_postgres
 
 2. **Create a new database**:
@@ -75,16 +76,21 @@ We welcome contributions to this project. Please follow these steps to contribut
 Fork the Repository:
 
 Click the "Fork" button in the top-right corner of the repository page to create a copy of the repository in your GitHub account.
+
 Clone the Forked Repository:
 
 git clone https://github.com/your-username/data_modelling_with_postgres.git
+
 cd data_modelling_with_postgres
-Create a New Branch:
+
+**Create a New Branch**:
+
 git checkout -b my-feature
 
-Make Your Changes:
+**Make Your Changes**:
 
 Implement your changes or additions to the repository code. Ensure your code follows the existing code style and includes necessary documentation.
+
 Commit and Push Your Changes:
 
 git add .
@@ -94,7 +100,7 @@ git commit -m "Description of the changes"
 git push origin my-feature
 
 
-Create a Pull Request:
+**Create a Pull Request**:
 
 Go to your forked repository on GitHub and click on the "Compare & pull request" button to create a pull request to the original repository.
 
