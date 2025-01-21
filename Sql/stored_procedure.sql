@@ -1,4 +1,4 @@
-----Get Student Performance
+----Get Student Performance---------
 CREATE OR REPLACE FUNCTION get_student_performance(p_student_id INT)
 RETURNS TABLE (
     CourseName VARCHAR(100),
@@ -21,9 +21,7 @@ END;
 $$
  LANGUAGE plpgsql;
 
--- Usage: SELECT * FROM get_student_performance(1);
-
----Update Student Grade
+---Update Student Grade------------------
 CREATE OR REPLACE PROCEDURE update_student_grade(
     p_student_id INT,
     p_course_id INT,
@@ -43,9 +41,7 @@ END;
 $$
 ;
 
--- Usage: CALL update_student_grade(1, 1, 95.5);
-
----Get Course Attendance Summary
+---Get Course Attendance Summary--------------
 CREATE OR REPLACE FUNCTION get_course_attendance_summary(p_course_id INT)
 RETURNS TABLE (
     CourseName VARCHAR(100),
@@ -70,5 +66,3 @@ BEGIN
 END;
 $$
  LANGUAGE plpgsql;
-
--- Usage: SELECT * FROM get_course_attendance_summary(1);
