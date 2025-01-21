@@ -63,7 +63,7 @@ This project demonstrates the design of a school management system using dimensi
 
 **Uploading CSV Files**
 
-To upload data from a CSV file into a PostgreSQL table, you can use the COPY command. For example, to upload data into the DimTeacher table:
+To upload data from a CSV file into a PostgreSQL table, you can use the COPY command. For example, to upload data into the DimTeacher table using psql:
 
 COPY DimTeacher FROM '/path/to/your/csvfile.csv' DELIMITER ',' CSV HEADER;
 

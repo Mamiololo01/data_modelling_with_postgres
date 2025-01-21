@@ -1,4 +1,4 @@
----Student Performance Overview
+---Student Performance Overview----
 CREATE VIEW vw_StudentPerformanceOverview AS
 SELECT 
     s.StudentID,
@@ -13,7 +13,7 @@ JOIN DimCourse c ON f.CourseID = c.CourseID
 JOIN DimTeacher t ON f.TeacherID = t.TeacherID
 GROUP BY s.StudentID, s.FirstName, s.LastName, c.CourseName, t.FirstName, t.LastName;
 
----Course Performance Summary
+---Course Performance Summary-----
 CREATE VIEW vw_CoursePerformanceSummary AS
 SELECT 
     c.CourseID,
@@ -25,7 +25,7 @@ FROM FactStudentPerformance f
 JOIN DimCourse c ON f.CourseID = c.CourseID
 GROUP BY c.CourseID, c.CourseName, c.Department;
 
----Teacher Performance Overview
+---Teacher Performance Overview-----
 CREATE VIEW vw_TeacherPerformanceOverview AS
 SELECT 
     t.TeacherID,
